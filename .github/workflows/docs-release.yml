@@ -24,7 +24,7 @@ jobs:
           if [ -f go.mod ]; then
             mv go.mod go.mod.bak
           fi
-          go mod init github.com/pontus-devoteam/agent-sdk-go
+          go mod init github.com/fodedoumbouya/agent-sdk-go
           go mod tidy
 
       - name: Install pkgsite (modern godoc)
@@ -44,7 +44,7 @@ jobs:
           
           # Fetch the documentation HTML
           mkdir -p api-docs
-          wget -r -np -k -p -P api-docs http://localhost:6060/github.com/pontus-devoteam/agent-sdk-go
+          wget -r -np -k -p -P api-docs http://localhost:6060/github.com/fodedoumbouya/agent-sdk-go
           
           # Stop the server
           kill $PID
@@ -68,8 +68,8 @@ jobs:
             "name": "agent-sdk-go",
             "version": "${GITHUB_REF#refs/tags/}",
             "generated_date": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')",
-            "repository": "https://github.com/pontus-devoteam/agent-sdk-go",
-            "release_notes_url": "https://github.com/pontus-devoteam/agent-sdk-go/releases/tag/${GITHUB_REF#refs/tags/}"
+            "repository": "https://github.com/fodedoumbouya/agent-sdk-go",
+            "release_notes_url": "https://github.com/fodedoumbouya/agent-sdk-go/releases/tag/${GITHUB_REF#refs/tags/}"
           }
           EOF
           
@@ -85,7 +85,7 @@ jobs:
       - name: Checkout React website repo
         uses: actions/checkout@v3
         with:
-          repository: pontus-devoteam/agent-sdk-website # Replace with your actual React repo
+          repository: fodedoumbouya/agent-sdk-website # Replace with your actual React repo
           token: ${{ secrets.WEBSITE_REPO_TOKEN }} # Create this secret in your repo settings
           path: website
 
@@ -146,6 +146,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.WEBSITE_REPO_TOKEN }}
-          repository: pontus-devoteam/agent-sdk-website # Replace with your actual React repo
+          repository: fodedoumbouya/agent-sdk-website # Replace with your actual React repo
           event-type: update-documentation
           client-payload: '{"version": "${{ github.ref_name }}"}' 

@@ -1,8 +1,8 @@
 package result
 
 import (
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/agent"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/model"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/agent"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/model"
 )
 
 // StreamEvent represents an event in a streaming response

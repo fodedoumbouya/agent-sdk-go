@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/agent"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/result"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/agent"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/result"
 )
 
 // WorkflowRunner extends the base Runner with workflow capabilities

@@ -1,8 +1,8 @@
-module github.com/pontus-devoteam/agent-sdk-go
+module github.com/fodedoumbouya/agent-sdk-go
 
 go 1.23.7
 
-replace github.com/pontus-devoteam/agent-sdk-go => ./
+replace github.com/fodedoumbouya/agent-sdk-go => ./
 
 require (
 	github.com/stretchr/testify v1.10.0

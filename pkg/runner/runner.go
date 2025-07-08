@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/model"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/result"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/tool"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/tracing"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/model"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/result"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/tool"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/tracing"
 )
 
 const (

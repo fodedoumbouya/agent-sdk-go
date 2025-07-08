@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/agent"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/model"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/runner"
-	"github.com/pontus-devoteam/agent-sdk-go/pkg/tool"
-	"github.com/pontus-devoteam/agent-sdk-go/test/mocks"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/agent"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/model"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/runner"
+	"github.com/fodedoumbouya/agent-sdk-go/pkg/tool"
+	"github.com/fodedoumbouya/agent-sdk-go/test/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
